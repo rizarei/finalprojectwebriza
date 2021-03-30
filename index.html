@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>REI's</title>
+
+<body>
+    <div class="w3-top">
+      <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+      <a href="about us.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT US</a>
+      <a href="portfolio.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+      <a href="blog.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> BLOG</a>
+      <a href="contact us.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT US</a>
+      <a href="to dos.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> TO DOS</a>
+      </a>
+        </div>
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+          <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT US</a>
+          <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+          <a href="#blog" class="w3-bar-item w3-button" onclick="toggleFunction()">BLOG</a>
+          <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT US</a>
+          <a href="#todos" class="w3-bar-item w3-button" onclick="toggleFunction()">TO DOS</a>
+      </div>
+    </div>
+    <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src='images/Home 08.jpg' alt="Web Programming" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-white">REI's</h1>
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>WEB PROGRAMMING SERVICE</b></h1>
+      <button class="w3-button w3-white">Order now <i class="fa fa-shopping-cart"></i></button>
+      </div>
+    </header>
+    <!-- Container (About Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT US</h3>
+  <h5 class= "w3-center">WHO ARE WE?</h5>
+  <img class="w3-image" src='images/aboutus.jpg' alt="aboutus" width="1000" height="500">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">INTRODUCE OUR PROJECTS</h3>
+  <p class="w3-center"><em>Here are some of our latest work.<br> Click on the images to make them bigger</em></p><br>
+
+ <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+ <div class="w3-row-padding w3-center">
+  <div class="w3-col m3">
+    <img src='images/Porto 01.png' style="width:100%" onclick="onClick(this)" class="" alt="IDEA ANALYSIS">
+  </div>
+
+  <div class="w3-col m3">
+    <img src='images/Porto 02.jpg' style="width:100%" onclick="onClick(this)" class="" alt="DEVELOPMENT">
+  </div>
+
+  <div class="w3-col m3">
+    <img src='images/Porto 03.jpg' style="width:100%" onclick="onClick(this)" class="" alt="WEB DESIGN">
+  </div>
+
+  <div class="w3-col m3">
+    <img src='images/Porto 04.png' style="width:100%" onclick="onClick(this)" class="" alt="SECURITY">
+  </div>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+  
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
+ 
+<script src="js/function.js"></script>
+</body>
+</html>
